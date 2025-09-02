@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- ===================== HEADER ===================== -->
+  <header>
+    <div class="container nav">
+      <div class="brand">My<span>Portfolio</span></div>
+      <button id="menuBtn" class="menu-btn" aria-label="Toggle Menu">☰</button>
+      <nav id="navLinks" class="links">
+        <a href="#home" class="active">Home</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== HOME ===================== -->
+  <section id="home" class="container">
+    <div class="hero card">
+      <div class="intro">
+        <h1>Hello, I'm <span style="color:var(--accent)">Jasbeer Singh</span></h1>
+        <p>Highly motivated and detail-oriented professional seeking a challenging role in a reputable organization to leverage my expertise in AI tools 
+          (e.g., Chat GDP, Deepseek or Gemini) and programming skills (e.g., Python, Java, or C++)
+           to drive innovation and growth. Eager to expand my knowledge, enhance my technical abilities, 
+          and contribute to impactful projects in a dynamic team environment.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#projects" download="">Resume</a>
+          <a class="btn btn-primary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="avatar">
+        <div class="hint"><img src="pro.jpg" alt="png"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+        <div class="card edu-item">
+          <h3>Master of Computer Application</h3>
+          <div class="project-meta">Guru Nanak University</div>
+          <p>Year:2024-2026 .Coursework: Data Structures, Operating Systems, Computer Networks, DBMS.</p>
+        </div>
+        <div class="card edu-item">
+          <h3>B.Com (Computer Application)</h3>
+          <div class="project-meta">Jagruti Degree & P.G College (Osmania University)</div>
+          <p>Year:2021-2024. Percentage: 80%.</p>
+        </div>
+        <div class="card edu-item">
+          <h3>Mathmatics Economic Commerce</h3>
+          <div class="project-meta">Sri Chaitanya Junior College• 2019 - 2021</div>
+          <p>Percentage: 67.68%.</p>
+        </div>
+        <div class="card edu-item">
+          <h3>SR High School</h3>
+          <div class="project-meta">SSC• 2019</div>
+          <p>Percentage: 65%.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="grid">
+        <article class="card project-card col-4">
+          <h3>Portfolio Website</h3>
+          <p>A responsive single‑page site built with HTML, CSS, and JavaScript. Features smooth scrolling and a sticky header.</p>
+          <div class="project-meta">HTML • CSS • JS</div>
+        </article>
+        <article class="card project-card col-4">
+          <h3>Task Manager</h3>
+          <p>LocalStorage‑powered to‑do app with drag‑and‑drop sorting and filters.</p>
+          <div class="project-meta">JavaScript</div>
+        </article>
+        <article class="card project-card col-4">
+          <h3>Weather App</h3>
+          <p>Fetches live weather by city name with debounced search and error states.</p>
+          <div class="project-meta">API • Async JS</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div class="timeline">
+        <div class="card edu-item">
+          <h3>Skills</h3>
+          <p><b>technical skills:</b>C++,Python,Digital Marketing,Web Development(HTML5,CSS3,JavaScript).</p>
+          <p><b>soft skills:</b>Effective Communication,Team Collaboration,Problem-Solving,Adaptability.</p>
+        </div>
+        <div class="card edu-item">
+          <h3>AI Tools Use</h3>
+          <p>ChatGPT,Deepseek,Gemini,Grok,GitHub Copilot,Microsoft Copilot.</p>
+        </div>
+        <div class="card edu-item">
+          <h3>Workshops</h3>
+          <p><b>AI For India 2.0 & IIT Madras: </b>National online Skilling Workshop (Participated in and Successfully
+             completed the workshop conducted by GUVI, in collaboration with skill india Digital & NSDC).</p>
+        <p><b>IEEE-CAS Workshop – Dec 2024: </b>Participated in a 2-day workshop on IOT Sensors
+             with Embedded Systems organized by IEEE-CAS, Guru Nanak Institutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="card" style="padding:1.25rem;">
+        <form id="contactForm">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <p class="hint mt-2" id="formHint"></p>
+          <ul>
+            <li><a href=""><i class="fa-brands fa-github" style="color: #6b6b6b;"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-linkedin" style="color: #6b6b6b;"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram" style="color: #6b6b6b;"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-facebook" style="color: #6b6b6b;"></i></a></li>
+          </ul>
+        </p>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Jasbeer Singh. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
