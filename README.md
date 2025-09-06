@@ -77,7 +77,7 @@ I'm **Jasbeer Singh**, a passionate MCA student with a strong foundation in comp
 
 If you'd like to collaborate, connect, or hire me—feel free to reach out via the contact form on the website or use the links below:
 
-- 📧 Email: *(Add your email here if desired)*
+- 📧 Email: jasbeersinghsingh591@gmail.com
 - 🌐 Website: [jasbeersingh22.github.io/My-Portile](https://jasbeersingh22.github.io/My-Portile/)
 
 ---
